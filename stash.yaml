@@ -1,7 +1,7 @@
 name: "🐱检测Spotify歌词分享"
 desc: "检测访问 storage.googleapis.com 的请求并发送通知"
 author: "HenTaku"
-homepage: "https://github.com/HenTaku0/tmp"
+homepage: "https://github.com/HenTaku321/SpotifyLyricsShare"
 icon: "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/png/512/emoji_u1f63a.png"
 
 http:
@@ -15,5 +15,5 @@ http:
 
 script-providers:
   CheckStorageRequests:
-    url: https://raw.githubusercontent.com/HenTaku0/tmp/main/stash.js
+    url: https://raw.githubusercontent.com/HenTaku321/SpotifyLyricsShare/main/stash.js
     interval: 86400
