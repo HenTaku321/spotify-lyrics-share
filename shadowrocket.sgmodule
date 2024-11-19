@@ -1,0 +1,12 @@
+#!name=🐱检测Spotify歌词分享
+#!desc=检测访问 storage.googleapis.com 的请求并发送通知
+#!author=HenTaku
+#!icon=https://raw.githubusercontent.com/googlefonts/noto-emoji/main/png/512/emoji_u1f63a.png
+#!category=Spotify
+#!homepage=https://github.com/HenTaku321/SpotifyLyricsShare
+
+[Script]
+quanx = type=http-response, pattern=^https?:\/\/storage\.googleapis\.com\/.*, script-path=https://raw.githubusercontent.com/HenTaku321/spotify-lyrics-share/refs/heads/main/shadowrocket.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% storage.googleapis.com
