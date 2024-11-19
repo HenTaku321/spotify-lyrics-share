@@ -6,9 +6,6 @@ var userAgent = $request.headers['User-Agent'] || $request.headers['user-agent']
 if (contentType.includes('image') && !userAgent.includes('Mozilla')) {
     // 打开浏览器，显示图片URL
     $notify("🐱检测到Spotify歌词分享🐱", `URL: ${url}`, "点击查看图片", {"open-url": url});
-    // 直接跳转到浏览器
-    $done({response: {status: 302, headers: {Location: url}}});
-} else {
-    // 返回未修改的响应体
+    
     $done({});
 }
